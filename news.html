@@ -14,13 +14,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     <title>Document</title>
 </head>
 
 <body>
     <header class="fixed">
         <div class="inner d-flex">
-            <div class="h-l col-md-3">
+            <div class="h-l col-md-3 col-sm-6">
                 <a class="logo">
                     <img src="/images/logo.png" alt="">
                 </a>
@@ -53,6 +57,43 @@
                     <button class="login">Đăng nhập</button>
                 </div>
             </div>
+            <div class="menu-mobile">
+                <label for="nav-mobile-input" class="nav__bars-btn" id="btn-bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>                </label>
+                <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav__overlay">
+                </label>
+                <div class="nav__mobile">
+                    <div class="nav_mobile_header d-flex justify-content-around">
+                        <img src="/images/logo.png">
+                        <label for="nav-mobile-input" class="pt-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </label>
+                    </div>
+                    <ul class="nav__mobile-list">
+                        <li>
+                            <a href="" class="nav__mobile-link">Hợp tác với Heno</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Về HENO</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Cẩm nang</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Liên hệ</a>
+                        </li>
+                        <li class="pt-3">
+                            <button class="register">Đăng ký</button>
+                            <button class="login">Đăng nhập</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -60,22 +101,20 @@
             <div class="header-section">
                 <h1>KHỎE ĐẸP</h1>
                 <ul class="menu-tab d-flex">
-                    <li class="active">KHỎE ĐẸP</li>
+                    <li>KHỎE ĐẸP</li>
                     <li><a href="#">TÀI CHÍNH</a></li>
-                    <li><a href="#">DỊCH VỤ CHĂM SÓC HOT</a></li>
+                    <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a></li>
                     <li><a href="#">KHUYẾN MÃI</a></li>
                     <li><a href="#">HƯỚNG DẪN SỬ DỤNG</a></li>
                 </ul>
             </div>
-            <hr>
-            <div class="main-content row">
-                <div class="col-md-9 article-content">
+            <div class="introduction row">
+                <div class="col-lg-9 col-md-8 article-content">
                     <div class="slider d-flex">
-                        <div class="col-md-7 big-slide">
+                        <div class="col-lg-7 col-sm-6 big-slide">
                             <img src="/images/image 92.png" alt="">
                             <h3><a href="#">Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có đủ tiền
-                                    trong tài
-                                    khoản.</a></h3>
+                                    trong tài khoản .</a></h3>
                             <div class="create-date">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -93,14 +132,15 @@
                                 <p>2-4 ngày trước</p>
                             </div>
                         </div>
-                        <div class="col-md-5 small-slide">
+                        <div class="col-lg-5 col-sm-6 small-slide">
                             <ul>
                                 <li>
-                                    <div class="img-sm-slide col-md-5">
+                                    <div class="img-sm-slide col-md-5 col-sm-5">
                                         <img src="/images/img-sm-slide-1.png" alt="">
                                     </div>
-                                    <div class="text-sm-slide col-md-7">
-                                        <a href="#"> Cách chọn nhà cung cấp dịch vụ chăm sóc sức khỏe phù hợp </a>
+                                    <div class="text-sm-slide col-md-7 col-sm-7">
+                                        <a href="#"> Cách chọn nhà cung cấp dịch vụ chăm sóc sức khỏe phù hợp Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
+                                            với HENO </a>
                                         <div class="create-date">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -120,10 +160,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="img-sm-slide col-md-5">
+                                    <div class="img-sm-slide col-md-5 col-sm-5">
                                         <img src="/images/img-sm-slide-2.png" alt="">
                                     </div>
-                                    <div class="text-sm-slide col-md-7">
+                                    <div class="text-sm-slide col-md-7 col-sm-7">
                                         <a href="#"> Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
                                             với HENO </a>
                                         <div class="create-date">
@@ -145,10 +185,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="img-sm-slide col-md-5">
+                                    <div class="img-sm-slide col-md-5 col-sm-5">
                                         <img src="/images/img-sm-slide-2.png" alt="">
                                     </div>
-                                    <div class="text-sm-slide col-md-7">
+                                    <div class="text-sm-slide col-md-7 col-sm-7">
                                         <a href="#"> Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
                                             với HENO </a>
                                         <div class="create-date">
@@ -170,10 +210,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="img-sm-slide col-md-5">
+                                    <div class="img-sm-slide col-md-5 col-sm-5">
                                         <img src="/images/img-sm-slide-2.png" alt="">
                                     </div>
-                                    <div class="text-sm-slide col-md-7">
+                                    <div class="text-sm-slide col-md-7 col-sm-7">
                                         <a href="#"> Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
                                             với HENO </a>
                                         <div class="create-date">
@@ -196,7 +236,79 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>                 
+                </div>
+                <div class="col-lg-3 col-md-4 b-side">
+                    <div class="view-hot">
+                        <div class="h-vh">
+                            <h2>XEM NHIỀU</h2>
+                        </div>
+                        <hr>
+                        <ul>
+                            <li class="d-flex justify-content-around">
+                                <div class="count-num active col-sm-3">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="text-view-hot col-sm-9">
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing edit aaaaaaaaaaaaaaaaaaa
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-around">
+                                <div class="count-num col-sm-3">
+                                    <h4>2</h4>
+                                </div>
+                                  <div class="text-view-hot col-sm-9"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing edit</a>
+                                    </div>
+                            </li>
+                            <li class="d-flex justify-content-around">
+                                <div class="count-num col-sm-3">
+                                    <h4>3</h4>
+                                </div>
+                                  <div class="text-view-hot col-sm-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        edit</a></div>
+                            </li>
+                            <li class="d-flex justify-content-around">
+                                <div class="count-num col-sm-3 ">
+                                    <h4>4</h4>
+                                </div>
+                                  <div class="text-view-hot col-sm-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        edit</a></div>
+                            </li>
+                            <li class="d-flex justify-content-around">
+                                <div class="count-num col-sm-3">
+                                    <h4>5</h4>
+                                </div>
+                                  <div class="text-view-hot col-sm-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        edit</a></div>
+                            </li>
+                            <li class="d-flex justify-content-around">
+                                <div class="count-num col-sm-3">
+                                    <h4>6</h4>
+                                </div>
+                                  <div class="text-view-hot col-sm-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        edit </a></div>
+                            </li>
+                            <li class="d-flex justify-content-around">
+                                <div class="count-num col-sm-3">
+                                    <h4>7</h4>
+                                </div>
+                                  <div class="text-view-hot col-sm-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        edit</a></div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+            <div class="main-content row">
+                <div class="col-lg-9 col-md-8 article-section">
                     <section>
                         <ul>
                             <li>
@@ -204,13 +316,13 @@
                                     <img src="/images/img-content-1.png" alt="">
                                 </div>
                                 <div class="text-content col-md-8">
-                                     <div class="h-cate">
+                                    <div class="h-cate">
                                         <a href="#">CHĂM SÓC SỨC KHỎE </a>
                                     </div>
                                     <div class="tilte-content">
                                         <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
                                             đủ tiền
-                                            trong tài khoản.</a>
+                                            trong tài khoản. </a>
                                     </div>
                                     <div class="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -260,7 +372,7 @@
                                     <img src="/images/img-content-3.png" alt="">
                                 </div>
                                 <div class="text-content col-md-8">
-                                     <div class="h-cate">
+                                    <div class="h-cate">
                                         <a href="#">CHĂM SÓC SỨC KHỎE </a>
                                     </div>
                                     <div class="tilte-content">
@@ -288,7 +400,7 @@
                                     <img src="/images/img-content-4.png" alt="">
                                 </div>
                                 <div class="text-content col-md-8">
-                                     <div class="h-cate">
+                                    <div class="h-cate">
                                         <a href="#">CHĂM SÓC SỨC KHỎE </a>
                                     </div>
                                     <div class="tilte-content">
@@ -316,7 +428,7 @@
                                     <img src="/images/img-content-5.png" alt="">
                                 </div>
                                 <div class="text-content col-md-8">
-                                     <div class="h-cate">
+                                    <div class="h-cate">
                                         <a href="#">CHĂM SÓC SỨC KHỎE </a>
                                     </div>
                                     <div class="tilte-content">
@@ -342,9 +454,11 @@
                         <div class="pagination">
                             <div class="pagging">
                                 <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                                  </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
                                 </a>
                             </div>
                             <div class="pagging active">
@@ -355,85 +469,23 @@
                             </div>
                             <div class="pagging dot">
                                 <a>...</a>
-                            </div>                       
+                            </div>
                             <div class="pagging">
                                 <a href="#">20</a>
                             </div>
                             <div class="pagging">
                                 <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                  </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
                                 </a>
                             </div>
-                          </div>
+                        </div>
                     </section>
                 </div>
-                <div class="col-md-3 b-side">
-                    <div class="view-hot">
-                        <div class="h-vh">
-                            <h2>XEM NHIỀU</h2>
-                        </div>
-                        <hr>
-                        <ul>
-                            <li class="d-flex justify-content-around">
-                                <div class="count-num active col-md-3">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="text-view-hot col-md-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        edi</a>t</div>
-                            </li>
-                            <li class="d-flex justify-content-around">
-                                <div class="count-num ">
-                                    <h4>2</h4>
-                                </div>
-                                <div class="text-view-hot col-md-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        edi</a>t</div>
-                            </li>
-                            <li class="d-flex justify-content-around">
-                                <div class="count-num ">
-                                    <h4>3</h4>
-                                </div>
-                                <div class="text-view-hot col-md-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        edi</a>t</div>
-                            </li>
-                            <li class="d-flex justify-content-around">
-                                <div class="count-num ">
-                                    <h4>4</h4>
-                                </div>
-                                <div class="text-view-hot col-md-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        edi</a>t</div>
-                            </li>
-                            <li class="d-flex justify-content-around">
-                                <div class="count-num ">
-                                    <h4>5</h4>
-                                </div>
-                                <div class="text-view-hot col-md-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        edi</a>t</div>
-                            </li>
-                            <li class="d-flex justify-content-around">
-                                <div class="count-num ">
-                                    <h4>6</h4>
-                                </div>
-                                <div class="text-view-hot col-md-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        edi</a>t</div>
-                            </li>
-                            <li class="d-flex justify-content-around">
-                                <div class="count-num ">
-                                    <h4>7</h4>
-                                </div>
-                                <div class="text-view-hot col-md-9"><a href="#">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        edi</a>t</div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-lg-3 col-md-4 b-side-2 d-flex flex-column justify-content-between">
                     <div class="service-care">
                         <div class="h-svc">
                             <h2> DỊCH VỤ CHĂM SÓC MỚI </h2>
@@ -450,7 +502,7 @@
                                     <div class="count-content-one-cate">
                                         <a href>42 bài viết</a>
                                     </div>
-                                </div>                          
+                                </div>
                             </li>
                             <li>
                                 <div class="img-sv-item col-md-4">
@@ -461,7 +513,7 @@
                                     <div class="count-content-one-cate">
                                         <a href>42 bài viết</a>
                                     </div>
-                                </div>                          
+                                </div>
                             </li>
                             <li>
                                 <div class="img-sv-item col-md-4">
@@ -472,7 +524,7 @@
                                     <div class="count-content-one-cate">
                                         <a href>42 bài viết</a>
                                     </div>
-                                </div>                          
+                                </div>
                             </li>
                             <li>
                                 <div class="img-sv-item col-md-4">
@@ -483,13 +535,13 @@
                                     <div class="count-content-one-cate">
                                         <a href>42 bài viết</a>
                                     </div>
-                                </div>                          
+                                </div>
                             </li>
                         </ul>
                     </div>
                     <div class="promotion">
                         <div class="h-p">
-                            <h2> DỊCH VỤ CHĂM SÓC MỚI </h2>
+                            <h2> KHUYẾN MÃI </h2>
                         </div>
                         <hr>
                         <ul>
@@ -516,8 +568,178 @@
         </div>
     </main>
     <footer>
-        a
+        <div class="inner">
+            <div class="lg-footer">
+                <img src="/images/logo.png" alt="lg-ft">
+            </div>
+            <div class="d-flex footer-detail">
+                <div class="col-md-6 d-flex footer-detail-l">
+                    <ul class="col-md-5">
+                        <li>
+                            <a href="#">Khách hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Đối tác Heno</a>
+                        </li>
+                        <li>
+                            <a href="#">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ và hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a href="#">Điều kiện & Điều khoản</a>
+                        </li>
+                        <li>
+                            <a href="#">Chính sách quyền riêng tư</a>
+                        </li>
+                    </ul>
+                    <ul class="col-md-7">
+                        <li class="d-flex">
+                            <div class="col-md-6">
+                                Hỗ trợ khách hàng
+                            </div>
+                            <div class="col-md-6 link-mail">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.66665 2.66666H13.3333C14.0666 2.66666 14.6666 3.26666 14.6666 3.99999V12C14.6666 12.7333 14.0666 13.3333 13.3333 13.3333H2.66665C1.93331 13.3333 1.33331 12.7333 1.33331 12V3.99999C1.33331 3.26666 1.93331 2.66666 2.66665 2.66666Z"
+                                        stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#4F4F4F" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <a href="#">support@heno.vn</a>
+                            </div>
+
+                        </li>
+                        <li class="d-flex">
+                            <div class="col-md-6">
+                                Hỗ trợ nhà cung cấp
+                            </div>
+                            <div class="col-md-6 link-mail">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.66665 2.66666H13.3333C14.0666 2.66666 14.6666 3.26666 14.6666 3.99999V12C14.6666 12.7333 14.0666 13.3333 13.3333 13.3333H2.66665C1.93331 13.3333 1.33331 12.7333 1.33331 12V3.99999C1.33331 3.26666 1.93331 2.66666 2.66665 2.66666Z"
+                                        stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#4F4F4F" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <a href="#"> conntact@heno.vn</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 footer-detail-r">
+                    <div class="h-ft-r">
+                        CÔNG TY CỔ PHẦN CÔNG NGHỆ HEALTHCARE NOW
+                    </div>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66666 6H13.3333" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2.66666 10H13.3333" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6.66668 2L5.33334 14" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.6667 2L9.33334 14" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            MST: 0109823770
+                        </li>
+                        <li>
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 7.66666C14 12.3333 8 16.3333 8 16.3333C8 16.3333 2 12.3333 2 7.66666C2 4.35295 4.68629 1.66666 8 1.66666C11.3137 1.66666 14 4.35295 14 7.66666V7.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 9.66666C9.10457 9.66666 10 8.77123 10 7.66666C10 6.56209 9.10457 5.66666 8 5.66666C6.89543 5.66666 6 6.56209 6 7.66666C6 8.77123 6.89543 9.66666 8 9.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q. Hà Đông, TP.Hà Nội
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 6.00001L8 1.33334L14 6.00001V13.3333C14 14.0697 13.403 14.6667 12.6667 14.6667H3.33333C2.59695 14.6667 2 14.0697 2 13.3333V6.00001Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6 14.6667V8H10V14.6667" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Toà 3D Center, số 3 Duy Tân, Cầu Giấy, Hà Nội
+                        </li>
+                        <li>
+                            <ul class="d-flex justify-content-start list-social">
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+    <div class="action">
+        <div class="back-on-top d-flex justify-content-center" id="back-to-top">
+            <img src="/images/back to top.png" alt="">
+        </div>
+        <div class="support-mes">
+            <img src="/images/support.png" alt="">
+        </div>  
+    </div>     
+    <div class="coppy-right">
+        Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
+    </div>
+    <script src="/js/custom.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.autoplay').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        });
+    </script>
 </body>
 
 </html>
