@@ -396,9 +396,9 @@ header {
                 border-radius: 8px;
                 display: block;
                 margin: 0 auto;
-                min-height: 100px;
                 object-fit: cover;
-                max-height: 200px; }
+                max-height: 200px;
+                flex-shrink: 1; }
             .main-section .main-content .article-section section ul li .text-content {
               padding: 0 12px; }
               .main-section .main-content .article-section section ul li .text-content .h-cate a {
@@ -757,18 +757,30 @@ footer {
   header .menu-mobile .nav__bars-btn {
     margin-right: 20px;
     display: block !important; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
+  .header-section {
+    border: none !important; }
+
   .service-care {
     margin-top: 20px !important; }
 
-  footer .footer-detail {
-    display: block !important; }
-    footer .footer-detail .footer-detail-l {
+  footer {
+    padding-bottom: 40px; }
+    footer .footer-detail {
       display: block !important; }
-      footer .footer-detail .footer-detail-l .link-mail {
-        padding-left: 20px; }
-    footer .footer-detail .footer-detail-r {
-      padding: 0; }
+      footer .footer-detail .footer-detail-l {
+        display: block !important; }
+        footer .footer-detail .footer-detail-l ul {
+          display: flex !important; }
+        footer .footer-detail .footer-detail-l ul:last-child {
+          margin-bottom: 40px;
+          display: block !important; }
+          footer .footer-detail .footer-detail-l ul:last-child li {
+            display: flex !important; }
+      footer .footer-detail .footer-detail-r {
+        padding: 0; }
+        footer .footer-detail .footer-detail-r ul li {
+          line-height: 30px; }
 
   .menu-tab {
     display: none !important; }

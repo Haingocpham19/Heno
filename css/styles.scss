@@ -528,9 +528,9 @@ header {
                                     border-radius: 8px;
                                     display: block;
                                     margin:0 auto;
-                                    min-height: 100px;
                                     object-fit: cover;
                                     max-height: 200px;
+                                    flex-shrink: 1;
                                 }
                             }             
                         }
@@ -1005,6 +1005,7 @@ footer{
     footer{
         padding:0 16px;
     }
+   
 }
 @media screen and (max-width: 992px) {
     .introduction-mobile{
@@ -1025,21 +1026,37 @@ footer{
         }
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767.98px){
+    .header-section{
+        border:none !important;
+    }
     .service-care{
         margin-top:20px !important;
     }
     footer{
+        padding-bottom: 40px;
         .footer-detail{
             display:block !important;
             .footer-detail-l{
                display:block !important;
-               .link-mail{
-                   padding-left: 20px;
+               ul{
+                   display:flex !important;               
+               }
+               ul:last-child {
+                   margin-bottom: 40px;
+                   display: block !important;
+                   li{
+                       display:flex !important;
+                   }
                }
             }
             .footer-detail-r{
                 padding:0;
+                ul{
+                    li{
+                        line-height:30px;
+                    }
+                }
             }
         }
     }
