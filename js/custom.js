@@ -16,7 +16,7 @@ function scrollFunction() {
 }
 // Bind your button click, scroll direction and effect speed
 document.getElementById("back-to-top").onclick = function() {
-  scrollTo(0, 500); // it will take 8 seconds to reach to top.
+  scrollTo(0, 200); // it will take 8 seconds to reach to top.
 }
 
 // Element to move, time in ms to animate
