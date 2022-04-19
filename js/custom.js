@@ -55,3 +55,19 @@ function easeOutCuaic(t) {
   t--;
   return t * t * t + 1;
 }
+//click show menu mobile
+document.getElementById("btn-more-ne").addEventListener("click", function(e) {
+    let check = document.querySelector('.more-menu').style.display;
+    if(check==="flex"){
+      ShowHideMenuMobile();
+    }
+    else{
+      ShowMoreMenuMobile();
+    }
+})
+function ShowMoreMenuMobile(){
+  document.querySelector('.more-menu').setAttribute("style","display:flex !important;justify-content:space-around !important;");
+}
+function ShowHideMenuMobile(){
+  document.querySelector('.more-menu').setAttribute("style","display:none !important;");
+}

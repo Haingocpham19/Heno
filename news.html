@@ -27,7 +27,7 @@
             <div class="h-l col-md-3 col-sm-6">
                 <a class="logo">
                     <img src="/images/logo.png" alt="">
-                </a>
+                </a> 
             </div>
             <div class="h-r col-md-9">
                 <div class="d-flex justify-content-end">
@@ -103,28 +103,57 @@
                 <ul class="menu-tab d-flex">
                     <li>KHỎE ĐẸP</li>
                     <li><a href="#">TÀI CHÍNH</a></li>
-                    <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a></li>
+                    <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a><div class="border-active"></div></li>
                     <li><a href="#">KHUYẾN MÃI</a></li>
                     <li><a href="#">HƯỚNG DẪN SỬ DỤNG</a></li>
                 </ul>
-            </div>
-            <div class="header-section-mobile">
-                <h1>KHỎE ĐẸP</h1>
-                <ul class="menu-tab-mobile">
-                    <li>KHỎE ĐẸP</li>
-                    <li><a href="#">TÀI CHÍNH</a></li>
-                    <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a></li>
-                    <li><a href="#">KHUYẾN MÃI</a></li>
-                    <li><a href="#">HƯỚNG DẪN SỬ DỤNG</a></li>
-                </ul>
+                <div class="menu-tab-mobile">
+                    <ul class="d-flex justify-content-between">
+                        <li>KHỎE ĐẸP</li>
+                        <li><a href="#">TÀI CHÍNH</a></li>
+                        <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a><div class="border-active"></div></li>
+                        <li>
+                            <div class="btn-more" id="btn-more-ne">
+                                <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9207 0.180054H6.69072H1.08072C0.120725 0.180054 -0.359275 1.34005 0.320725 2.02005L5.50072 7.20005C6.33072 8.03005 7.68073 8.03005 8.51073 7.20005L10.4807 5.23005L13.6907 2.02005C14.3607 1.34005 13.8807 0.180054 12.9207 0.180054Z" fill="#292D32"/>
+                                    </svg>                                
+                            </div>
+                        </li>
+                        <!-- <div class="d-flex justify-content-between">
+                            <li>KHỎE ĐẸP</li>
+                            <li><a href="#">TÀI CHÍNH</a></li>
+                            <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a></li>
+                            <li>
+                                <div class="btn-more" id="btn-more-ne">
+                                    <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.9207 0.180054H6.69072H1.08072C0.120725 0.180054 -0.359275 1.34005 0.320725 2.02005L5.50072 7.20005C6.33072 8.03005 7.68073 8.03005 8.51073 7.20005L10.4807 5.23005L13.6907 2.02005C14.3607 1.34005 13.8807 0.180054 12.9207 0.180054Z" fill="#292D32"/>
+                                        </svg>                                
+                                </div>
+                            </li>
+                        </div>               -->
+                        <!-- <div class="btn-more" id="btn-more-ne">
+                            <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9207 0.180054H6.69072H1.08072C0.120725 0.180054 -0.359275 1.34005 0.320725 2.02005L5.50072 7.20005C6.33072 8.03005 7.68073 8.03005 8.51073 7.20005L10.4807 5.23005L13.6907 2.02005C14.3607 1.34005 13.8807 0.180054 12.9207 0.180054Z" fill="#292D32"/>
+                                </svg>                                
+                        </div> -->
+                    </ul>
+                    <ul class="more-menu d-none pt-3">
+                        <li><a href="#">KHUYẾN MÃI</a></li>
+                        <li><a href="#">HƯỚNG DẪN SỬ DỤNG</a></li>
+                    </ul>              
+                </div>
             </div>
             <div class="introduction row">
                 <div class="col-lg-9 col-md-8 article-content">
                     <div class="slider d-flex">
-                        <div class="col-lg-7 col-sm-6 col-12 big-slide">
-                            <img src="/images/image 92.png" alt="">
-                            <h3><a href="#">Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có đủ tiền
-                                    trong tài khoản .</a></h3>
+                        <div class="col-lg-7 col-sm-6 col-12 big-slide d-flex flex-column justify-content-between">
+                            <div>
+                                <a href="#">
+                                    <img src="/images/image 92.png" alt="">
+                                </a>
+                                <h3><a href="#">Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có đủ tiền
+                                        trong tài khoản .</a></h3>
+                            </div>              
                             <div class="create-date">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +175,8 @@
                             <ul>
                                 <li>
                                     <div class="img-sm-slide col-md-5 col-sm-5">
-                                        <img src="/images/img-sm-slide-1.png" alt="">
+                                        <a href="#"> <img src="/images/img-sm-slide-1.png" alt="">
+                                        </a>
                                     </div>
                                     <div class="text-sm-slide col-md-7 col-sm-7">
                                         <a href="#"> Cách chọn nhà cung cấp dịch vụ chăm sóc sức khỏe phù hợp Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
@@ -171,7 +201,8 @@
                                 </li>
                                 <li>
                                     <div class="img-sm-slide col-md-5 col-sm-5">
-                                        <img src="/images/img-sm-slide-2.png" alt="">
+                                        <a href="#"> <img src="/images/img-sm-slide-2.png" alt="">
+                                        </a>
                                     </div>
                                     <div class="text-sm-slide col-md-7 col-sm-7">
                                         <a href="#"> Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
@@ -196,7 +227,7 @@
                                 </li>
                                 <li>
                                     <div class="img-sm-slide col-md-5 col-sm-5">
-                                        <img src="/images/img-sm-slide-2.png" alt="">
+                                        <a href="#"><img src="/images/img-sm-slide-2.png" alt=""></a>                                      
                                     </div>
                                     <div class="text-sm-slide col-md-7 col-sm-7">
                                         <a href="#"> Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
@@ -221,7 +252,7 @@
                                 </li>
                                 <li>
                                     <div class="img-sm-slide col-md-5 col-sm-5">
-                                        <img src="/images/img-sm-slide-2.png" alt="">
+                                        <a href="#"><img src="/images/img-sm-slide-2.png" alt=""></a>                    
                                     </div>
                                     <div class="text-sm-slide col-md-7 col-sm-7">
                                         <a href="#"> Chăm sóc sức khỏe cao cấp từ sự thoải mái trong ngôi nhà của bạn
@@ -313,27 +344,51 @@
                     </div>
                 </div>
             </div>
+            <div class="introduction-mobile col-12">
+                <div class="slider-mobile">
+                    <div class="slider-mobile-item">
+                        <img src="/images/image 92.png" alt="">
+                        <h2><a href="#">Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có đủ tiền</a></h2>
+                    </div>
+                    <div class="slider-mobile-item">
+                        <img src="/images/slide-mb-2.jpg" alt="">
+                        <h2><a href="#">Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có đủ tiền</a></h2>
+                    </div>
+                    <div class="slider-mobile-item">
+                        <img src="/images/slide-mb.jpg" alt="">
+                        <h2><a href="#">Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có đủ tiền</a></h2>
+                    </div>   
+                    <div class="slider-mobile-item">
+                        <img src="/images/slide-mb-2.jpg" alt="">
+                        <h2><a href="#">Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có đủ tiền</a></h2>
+                    </div>   
+                </div>
+            </div>
             <div class="main-content row">
                 <div class="col-lg-9 col-md-8 article-section">
                     <section>
                         <ul>
                             <li>
-                                <div class="img-content col-md-4">
-                                    <img src="/images/img-content-1.png" alt="">
+                                <div class="img-content col-md-4 col-4">
+                                    <a href="">
+                                        <img src="/images/img-content-1.png">
+                                    </a>
                                 </div>
-                                <div class="text-content col-md-8">
-                                    <div class="h-cate">
-                                        <a href="#">CHĂM SÓC SỨC KHỎE </a>
-                                    </div>
-                                    <div class="tilte-content">
-                                        <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
-                                            đủ tiền
-                                            trong tài khoản. </a>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua...
-                                    </div>
+                                <div class="text-content col-md-8 col-8 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="h-cate">
+                                            <a href="#">CHĂM SÓC SỨC KHỎE </a>
+                                        </div>
+                                        <div class="tilte-content">
+                                            <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
+                                                đủ tiền
+                                                trong tài khoản. </a>
+                                        </div>
+                                        <div class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua...
+                                        </div>       
+                                    </div>                                                    
                                     <div class="footer-text-content">
                                         <div class="avt-author">
                                             <img src="/images/author-1.png" alt="">
@@ -346,22 +401,26 @@
                             </li>
                             <hr>
                             <li>
-                                <div class="img-content col-md-4">
-                                    <img src="/images/img-content-2.png" alt="">
+                                <div class="img-content col-md-4 col-4">
+                                    <a href="">
+                                        <img src="/images/img-content-2.png">
+                                    </a>
                                 </div>
-                                <div class="text-content col-md-8">
-                                    <div class="h-cate">
-                                        <a href="#">CHĂM SÓC SỨC KHỎE </a>
-                                    </div>
-                                    <div class="tilte-content">
-                                        <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
-                                            đủ tiền
-                                            trong tài khoản.</a>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua...
-                                    </div>
+                                <div class="text-content col-md-8 col-8 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="h-cate">
+                                            <a href="#">CHĂM SÓC SỨC KHỎE </a>
+                                        </div>
+                                        <div class="tilte-content">
+                                            <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
+                                                đủ tiền
+                                                trong tài khoản. </a>
+                                        </div>
+                                        <div class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua...
+                                        </div>       
+                                    </div>                                                    
                                     <div class="footer-text-content">
                                         <div class="avt-author">
                                             <img src="/images/author-1.png" alt="">
@@ -374,22 +433,26 @@
                             </li>
                             <hr>
                             <li>
-                                <div class="img-content col-md-4">
-                                    <img src="/images/img-content-3.png" alt="">
+                                <div class="img-content col-md-4 col-4">
+                                    <a href="">
+                                        <img src="/images/img-content-3.png">
+                                    </a>
                                 </div>
-                                <div class="text-content col-md-8">
-                                    <div class="h-cate">
-                                        <a href="#">CHĂM SÓC SỨC KHỎE </a>
-                                    </div>
-                                    <div class="tilte-content">
-                                        <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
-                                            đủ tiền
-                                            trong tài khoản.</a>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua...
-                                    </div>
+                                <div class="text-content col-md-8 col-8 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="h-cate">
+                                            <a href="#">CHĂM SÓC SỨC KHỎE </a>
+                                        </div>
+                                        <div class="tilte-content">
+                                            <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
+                                                đủ tiền
+                                                trong tài khoản. </a>
+                                        </div>
+                                        <div class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua...
+                                        </div>       
+                                    </div>                                                    
                                     <div class="footer-text-content">
                                         <div class="avt-author">
                                             <img src="/images/author-1.png" alt="">
@@ -402,22 +465,26 @@
                             </li>
                             <hr>
                             <li>
-                                <div class="img-content col-md-4">
-                                    <img src="/images/img-content-4.png" alt="">
+                                <div class="img-content col-md-4 col-4">
+                                    <a href="">
+                                        <img src="/images/img-content-4.png">
+                                    </a>
                                 </div>
-                                <div class="text-content col-md-8">
-                                    <div class="h-cate">
-                                        <a href="#">CHĂM SÓC SỨC KHỎE </a>
-                                    </div>
-                                    <div class="tilte-content">
-                                        <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
-                                            đủ tiền
-                                            trong tài khoản.</a>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua...
-                                    </div>
+                                <div class="text-content col-md-8 col-8 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="h-cate">
+                                            <a href="#">CHĂM SÓC SỨC KHỎE </a>
+                                        </div>
+                                        <div class="tilte-content">
+                                            <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
+                                                đủ tiền
+                                                trong tài khoản. </a>
+                                        </div>
+                                        <div class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua...
+                                        </div>       
+                                    </div>                                                    
                                     <div class="footer-text-content">
                                         <div class="avt-author">
                                             <img src="/images/author-1.png" alt="">
@@ -430,22 +497,26 @@
                             </li>
                             <hr>
                             <li>
-                                <div class="img-content col-md-4">
-                                    <img src="/images/img-content-5.png" alt="">
+                                <div class="img-content col-md-4 col-4">
+                                    <a href="">
+                                        <img src="/images/img-content-5.png">
+                                    </a>
                                 </div>
-                                <div class="text-content col-md-8">
-                                    <div class="h-cate">
-                                        <a href="#">CHĂM SÓC SỨC KHỎE </a>
-                                    </div>
-                                    <div class="tilte-content">
-                                        <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
-                                            đủ tiền
-                                            trong tài khoản.</a>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua...
-                                    </div>
+                                <div class="text-content col-md-8 col-8 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="h-cate">
+                                            <a href="#">CHĂM SÓC SỨC KHỎE </a>
+                                        </div>
+                                        <div class="tilte-content">
+                                            <a href="#"> Cách thanh toán chi phí sức khỏe của bạn - Ngay cả khi bạn không có
+                                                đủ tiền
+                                                trong tài khoản. </a>
+                                        </div>
+                                        <div class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua...
+                                        </div>       
+                                    </div>                                                    
                                     <div class="footer-text-content">
                                         <div class="avt-author">
                                             <img src="/images/author-1.png" alt="">
@@ -489,9 +560,17 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="pagination-mb text-center">
+                            Xem thêm 
+                            <span>
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                            </span>
+                        </div>
                     </section>
                 </div>
-                <div class="col-lg-3 col-md-4 b-side-2 d-flex flex-column justify-content-between">
+                <div class="col-lg-3 col-md-4 b-side-2 d-flex flex-column">
                     <div class="service-care">
                         <div class="h-svc">
                             <h2> DỊCH VỤ CHĂM SÓC MỚI </h2>
@@ -499,11 +578,13 @@
                         <hr>
                         <ul>
                             <li>
-                                <div class="img-sv-item col-md-4 new-sv-cate">
+                                <div class="img-sv-item col-4 col-md-4">
                                     <img src="/images/img-sv-care-1.png">
-                                    <img src="/images/icon-news-sv.png" alt="new-cate-item">
+                                    <span class="active">
+                                        <img src="/images/icon-news-sv.png">
+                                    </span>
                                 </div>
-                                <div class="title-sv-item col-md-8">
+                                <div class="title-sv-item col-8 col-md-8">
                                     Dịch vụ chăm sóc sức khỏe
                                     <div class="count-content-one-cate">
                                         <a href>42 bài viết</a>
@@ -520,6 +601,7 @@
                                         <a href>42 bài viết</a>
                                     </div>
                                 </div>
+                                
                             </li>
                             <li>
                                 <div class="img-sv-item col-md-4">
@@ -552,19 +634,19 @@
                         <hr>
                         <ul>
                             <li class="promotion-item">
-                                <img src="/images/img-promotion-1.png" alt="">
+                                <a href="#" class=""><img src="/images/img-promotion-1.png" alt=""></a>      
                                 <h5><a href="#">Chọn HENO ngay! Trả sau dễ dàng, thao tác đơn giản </a></h5>
                             </li>
                             <li class="promotion-item">
-                                <img src="/images/img-promotion-2.png" alt="">
+                                <a href="#" class=""><img src="/images/img-promotion-2.png" alt=""></a>                   
                                 <h5><a href="#">Chọn HENO ngay! Trả sau dễ dàng, thao tác đơn giản </a></h5>
                             </li>
                             <li class="promotion-item">
-                                <img src="/images/img-promotion-3.png" alt="">
+                                <a href="#"><img src="/images/img-promotion-3.png" alt=""></a>
                                 <h5><a href="#">Chọn HENO ngay! Trả sau dễ dàng, thao tác đơn giản </a></h5>
                             </li>
                             <li class="promotion-item">
-                                <img src="/images/img-promotion-1.png" alt="">
+                                <a href="#"><img src="/images/img-promotion-1.png" alt=""></a>
                                 <h5><a href="#">Chọn HENO ngay! Trả sau dễ dàng, thao tác đơn giản </a></h5>
                             </li>
                         </ul>
@@ -748,10 +830,10 @@
         autoplay: true,
         autoplaySpeed: 2000,
         });
-        
-       
-        $('.menu-tab-mobile').slick({
-            arrows: true,
+           
+        $('.slider-mobile').slick({
+            arrows: false,
+            dots : true
         });
     </script>
 </body>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&display=swap" rel="stylesheet"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Nunito:wght@500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="inner d-flex">
+            <div class="h-l col-md-3 col-sm-6">
+                <a class="logo">
+                    <img src="/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="h-r col-md-9">
+                <div class="d-flex justify-content-end">
+                    <ul class="d-flex justify-content-between">
+                        <li>
+                            <a href="#" class="active">Hợp tác với HENO</a>
+                        </li>
+                        <li>
+                            <a href="#">Về HENO</a>
+                            <span>
+                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.9335 0.682617H5.74182H1.06682C0.266823 0.682617 -0.133177 1.43914 0.43349 1.88262L4.75016 5.26088C5.44182 5.80218 6.56682 5.80218 7.25849 5.26088L8.90016 3.97609L11.5752 1.88262C12.1335 1.43914 11.7335 0.682617 10.9335 0.682617Z"
+                                        fill="#292D32" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">Cẩm nang</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <button class="register">Đăng ký</button>
+                    <button class="login">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <label for="nav-mobile-input" class="nav__bars-btn" id="btn-bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                    </svg> </label>
+                <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav__overlay">
+                </label>
+                <div class="nav__mobile">
+                    <div class="nav_mobile_header d-flex justify-content-around">
+                        <img src="/images/logo.png">
+                        <label for="nav-mobile-input" class="pt-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </label>
+                    </div>
+                    <ul class="nav__mobile-list">
+                        <li>
+                            <a href="" class="nav__mobile-link">Hợp tác với Heno</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Về HENO</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Cẩm nang</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Liên hệ</a>
+                        </li>
+                        <li class="pt-3">
+                            <button class="register">Đăng ký</button>
+                            <button class="login">Đăng nhập</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contact">
+            <div class="inner d-flex justify-content-between">
+                <div class="info-contact col-md-6 col-sm-12">
+                    <h2>LIÊN HỆ VÀ HỖ TRỢ</h2>
+                    <ul>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 7.66666C14 12.3333 8 16.3333 8 16.3333C8 16.3333 2 12.3333 2 7.66666C2 4.35295 4.68629 1.66666 8 1.66666C11.3137 1.66666 14 4.35295 14 7.66666V7.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 9.66666C9.10457 9.66666 10 8.77123 10 7.66666C10 6.56209 9.10457 5.66666 8 5.66666C6.89543 5.66666 6 6.56209 6 7.66666C6 8.77123 6.89543 9.66666 8 9.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <b>Trụ sở : </b>B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q. Hà Đông, TP.Hà Nội
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 6.00001L8 1.33334L14 6.00001V13.3333C14 14.0697 13.403 14.6667 12.6667 14.6667H3.33333C2.59695 14.6667 2 14.0697 2 13.3333V6.00001Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6 14.6667V8H10V14.6667" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <b>Địa chỉ văn phòng: </b>Toà 3D Center, số 3 Duy Tân, Cầu Giấy, Hà Nội
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4999 14.1V16.6C17.5019 17.0693 17.3058 17.5177 16.96 17.8349C16.6142 18.1522 16.1507 18.3089 15.6833 18.2667C13.119 17.9881 10.6558 17.1118 8.49162 15.7084C6.47814 14.4289 4.77106 12.7219 3.49162 10.7084C2.08327 8.53438 1.20682 6.0592 0.933284 3.48337C0.891178 3.01743 1.04684 2.55525 1.36225 2.20973C1.67767 1.8642 2.12378 1.66715 2.59162 1.66671H5.09162C5.92817 1.65847 6.6412 2.27168 6.75828 3.10004C6.8638 3.9001 7.05949 4.68565 7.34162 5.44171C7.57056 6.05077 7.42413 6.73738 6.96662 7.20004L5.90828 8.25837C7.09458 10.3447 8.82199 12.0721 10.9083 13.2584L11.9666 12.2C12.4293 11.7425 13.1159 11.5961 13.7249 11.825C14.481 12.1072 15.2666 12.3029 16.0666 12.4084C16.9046 12.5266 17.5209 13.254 17.4999 14.1Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            <b>Điện thoại:</b> 0931 741 906
+                        </li>
+                        <li>
+                            <div class="d-flex info-email">
+                                <div>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33341 3.33337H16.6667C17.5834 3.33337 18.3334 4.08337 18.3334 5.00004V15C18.3334 15.9167 17.5834 16.6667 16.6667 16.6667H3.33341C2.41675 16.6667 1.66675 15.9167 1.66675 15V5.00004C1.66675 4.08337 2.41675 3.33337 3.33341 3.33337Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3334 5L10.0001 10.8333L1.66675 5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <b>Email:</b> 
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li> Hỗ trợ khách hàng : <b>support@heno.vn</b></li>
+                                        <li> Hỗ trợ nhà cung cấp : <b>contact@heno.vn</b></li>
+                                    </ul>       
+                                </div>
+                            </div>                                         
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-contact col-md-6 col-sm-12">
+                    <form action="#">
+                        <input type="text" placeholder="Họ và tên">
+                        <input type="text" placeholder="Số điện thoại">
+                        <input type="text" placeholder="Email (Nếu có)">
+                        <input type="text" placeholder="Địa chỉ">
+                        <input type="text" placeholder="Nội dung">
+                        <input type="submit" value="Gửi ngay">
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <div class="inner">
+                    <h3>Xem bản đồ</h2>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2852751406094!2d105.76559581534664!3d20.98119878602419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134533ac876117d%3A0x88bfb82bbd449d1!2zSGltIExhbSBW4bqhbiBQaMO6Yw!5e0!3m2!1svi!2s!4v1650340245855!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="lg-footer">
+                <img src="/images/logo.png" alt="lg-ft">
+            </div>
+            <div class="d-flex footer-detail">
+                <div class="col-md-6 col-12 d-flex footer-detail-l">
+                    <ul class="col-md-5">
+                        <li>
+                            <a href="#">Khách hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Đối tác Heno</a>
+                        </li>
+                        <li>
+                            <a href="#">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ và hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a href="#">Điều kiện & Điều khoản</a>
+                        </li>
+                        <li>
+                            <a href="#">Chính sách quyền riêng tư</a>
+                        </li>
+                    </ul>
+                    <ul class="col-md-7">
+                        <li class="d-flex">
+                            <div class="col-md-6">
+                                Hỗ trợ khách hàng
+                            </div>
+                            <div class="col-md-6 link-mail">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.66665 2.66666H13.3333C14.0666 2.66666 14.6666 3.26666 14.6666 3.99999V12C14.6666 12.7333 14.0666 13.3333 13.3333 13.3333H2.66665C1.93331 13.3333 1.33331 12.7333 1.33331 12V3.99999C1.33331 3.26666 1.93331 2.66666 2.66665 2.66666Z"
+                                        stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#4F4F4F" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <a href="#">support@heno.vn</a>
+                            </div>
+
+                        </li>
+                        <li class="d-flex">
+                            <div class="col-md-6">
+                                Hỗ trợ nhà cung cấp
+                            </div>
+                            <div class="col-md-6 link-mail">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.66665 2.66666H13.3333C14.0666 2.66666 14.6666 3.26666 14.6666 3.99999V12C14.6666 12.7333 14.0666 13.3333 13.3333 13.3333H2.66665C1.93331 13.3333 1.33331 12.7333 1.33331 12V3.99999C1.33331 3.26666 1.93331 2.66666 2.66665 2.66666Z"
+                                        stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#4F4F4F" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <a href="#"> conntact@heno.vn</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-12 footer-detail-r">
+                    <div class="h-ft-r">
+                        CÔNG TY CỔ PHẦN CÔNG NGHỆ HEALTHCARE NOW
+                    </div>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66666 6H13.3333" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2.66666 10H13.3333" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6.66668 2L5.33334 14" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.6667 2L9.33334 14" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            MST: 0109823770
+                        </li>
+                        <li>
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 7.66666C14 12.3333 8 16.3333 8 16.3333C8 16.3333 2 12.3333 2 7.66666C2 4.35295 4.68629 1.66666 8 1.66666C11.3137 1.66666 14 4.35295 14 7.66666V7.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 9.66666C9.10457 9.66666 10 8.77123 10 7.66666C10 6.56209 9.10457 5.66666 8 5.66666C6.89543 5.66666 6 6.56209 6 7.66666C6 8.77123 6.89543 9.66666 8 9.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q. Hà Đông, TP.Hà Nội
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 6.00001L8 1.33334L14 6.00001V13.3333C14 14.0697 13.403 14.6667 12.6667 14.6667H3.33333C2.59695 14.6667 2 14.0697 2 13.3333V6.00001Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6 14.6667V8H10V14.6667" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Toà 3D Center, số 3 Duy Tân, Cầu Giấy, Hà Nội
+                        </li>
+                        <li>
+                            <ul class="d-flex justify-content-start list-social">
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="action">
+        <div class="back-on-top d-flex justify-content-center" id="back-to-top">
+            <img src="/images/back to top.png" alt="">
+        </div>
+        <div class="support-mes">
+            <img src="/images/support.png" alt="">
+        </div>
+    </div>
+    <div class="coppy-right">
+        Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
+    </div>
+    <script src="/js/custom.js"></script>
+    <!-- slicker -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+
+        $('.menu-tab-mobile').slick({
+            arrows: true,
+        });
+    </script>
+</body>
+
+</html>
