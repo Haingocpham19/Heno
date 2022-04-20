@@ -8,13 +8,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&display=swap" rel="stylesheet"
-        type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Nunito:wght@500;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-      <!-- bootstrap cdn -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
@@ -26,12 +24,12 @@
 <body>
     <header class="fixed">
         <div class="inner d-flex">
-            <div class="h-l col-md-3 col-sm-6">
+            <div class="h-l col-md-2 col-sm-6">
                 <a class="logo">
                     <img src="/images/logo.png" alt="">
                 </a> 
             </div>
-            <div class="h-r col-md-9">
+            <div class="h-r col-md-10">
                 <div class="d-flex justify-content-end">
                     <ul class="d-flex justify-content-between">
                         <li>
@@ -52,7 +50,7 @@
                             <a href="#">Cẩm nang</a>
                         </li>
                         <li>
-                            <a href="#">Liên Hệ</a>
+                            <a href="/contact.html">Liên Hệ</a>
                         </li>
                     </ul>
                     <button class="register">Đăng ký</button>
@@ -87,7 +85,7 @@
                             <a href="" class="nav__mobile-link">Cẩm nang</a>
                         </li>
                         <li>
-                            <a href="" class="nav__mobile-link">Liên hệ</a>
+                            <a href="/contact.html" class="nav__mobile-link">Liên hệ</a>
                         </li>
                         <li class="pt-3">
                             <button class="register">Đăng ký</button>
@@ -110,36 +108,23 @@
                     <li><a href="#">HƯỚNG DẪN SỬ DỤNG</a></li>
                 </ul>
                 <div class="menu-tab-mobile">
-                    <ul class="d-flex justify-content-between">
-                        <li>KHỎE ĐẸP</li>
-                        <li><a href="#">TÀI CHÍNH</a></li>
-                        <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a><div class="border-active"></div></li>
-                        <li>
-                            <div class="btn-more" id="btn-more-ne">
+                    <ul class="current-menu d-flex">
+                        <div class="col-11 d-flex">
+                            <li>KHỎE ĐẸP</li>
+                            <li class="active"><a href="#">TÀI CHÍNH</a><div class="border-active"></div></li>
+                        </div>                
+                        <li class="col-1 d-flex justify-content-end">       
+                            <!-- <input type="checkbox" hidden class="btn-showmore" id="btn-mobile-overlay">
+                            <label for="btn-mobile-overlay" class="menu__overlay">         -->
+                            <label for="btn-mobile-overlay" class="btn-more" id="btn-more-ne">
                                 <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.9207 0.180054H6.69072H1.08072C0.120725 0.180054 -0.359275 1.34005 0.320725 2.02005L5.50072 7.20005C6.33072 8.03005 7.68073 8.03005 8.51073 7.20005L10.4807 5.23005L13.6907 2.02005C14.3607 1.34005 13.8807 0.180054 12.9207 0.180054Z" fill="#292D32"/>
                                     </svg>                                
-                            </div>
+                            </label>
                         </li>
-                        <!-- <div class="d-flex justify-content-between">
-                            <li>KHỎE ĐẸP</li>
-                            <li><a href="#">TÀI CHÍNH</a></li>
-                            <li class="active"><a href="#">DỊCH VỤ CHĂM SÓC HOT</a></li>
-                            <li>
-                                <div class="btn-more" id="btn-more-ne">
-                                    <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.9207 0.180054H6.69072H1.08072C0.120725 0.180054 -0.359275 1.34005 0.320725 2.02005L5.50072 7.20005C6.33072 8.03005 7.68073 8.03005 8.51073 7.20005L10.4807 5.23005L13.6907 2.02005C14.3607 1.34005 13.8807 0.180054 12.9207 0.180054Z" fill="#292D32"/>
-                                        </svg>                                
-                                </div>
-                            </li>
-                        </div>               -->
-                        <!-- <div class="btn-more" id="btn-more-ne">
-                            <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.9207 0.180054H6.69072H1.08072C0.120725 0.180054 -0.359275 1.34005 0.320725 2.02005L5.50072 7.20005C6.33072 8.03005 7.68073 8.03005 8.51073 7.20005L10.4807 5.23005L13.6907 2.02005C14.3607 1.34005 13.8807 0.180054 12.9207 0.180054Z" fill="#292D32"/>
-                                </svg>                                
-                        </div> -->
                     </ul>
-                    <ul class="more-menu d-none pt-3">
+                    <ul class="more-menu d-none"> 
+                        <li><a href="#">DỊCH VỤ CHĂM SÓC HOT</a></li>         
                         <li><a href="#">KHUYẾN MÃI</a></li>
                         <li><a href="#">HƯỚNG DẪN SỬ DỤNG</a></li>
                     </ul>              
@@ -665,7 +650,7 @@
             <div class="d-flex footer-detail">
                 <div class="col-md-6 col-12 d-flex footer-detail-l">
                     <ul class="col-12 col-md-7">
-                        <div class="col-6 col-md-12">
+                        <div class="col-5 col-md-12">
                             <li>
                                 <a href="#">Khách hàng</a>
                             </li>
@@ -676,7 +661,7 @@
                                 <a href="#">Về chúng tôi</a>
                             </li>
                         </div>
-                        <div class="col-6 col-md-12">
+                        <div class="col-7 col-md-12">
                             <li>
                                 <a href="#">Liên hệ và hỗ trợ</a>
                             </li>
@@ -690,27 +675,10 @@
                     </ul>
                     <ul class="col-12 col-md-5">
                         <li class="d-block">
-                            <div class="col-6 col-md-12">
-                                Hỗ trợ khách hàng
-                            </div>
-                            <div class="link-mail col-md-12 col-6">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M2.66665 2.66666H13.3333C14.0666 2.66666 14.6666 3.26666 14.6666 3.99999V12C14.6666 12.7333 14.0666 13.3333 13.3333 13.3333H2.66665C1.93331 13.3333 1.33331 12.7333 1.33331 12V3.99999C1.33331 3.26666 1.93331 2.66666 2.66665 2.66666Z"
-                                        stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#4F4F4F" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <a href="#">support@heno.vn</a>
-                            </div>
-                        </li>
-                        <li class="d-block">
-                            <div class="col-6 col-md-12">
+                            <div class="col-12">
                                 Hỗ trợ nhà cung cấp
                             </div>
-                            <div class="col-6 col-md-12 link-mail">
+                            <div class="col-12 link-mail">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"

@@ -58,7 +58,7 @@ function easeOutCuaic(t) {
 //click show menu mobile
 document.getElementById("btn-more-ne").addEventListener("click", function(e) {
     let check = document.querySelector('.more-menu').style.display;
-    if(check==="flex"){
+    if(check==="block"){
       ShowHideMenuMobile();
     }
     else{
@@ -66,7 +66,7 @@ document.getElementById("btn-more-ne").addEventListener("click", function(e) {
     }
 })
 function ShowMoreMenuMobile(){
-  document.querySelector('.more-menu').setAttribute("style","display:flex !important;justify-content:space-around !important;");
+  document.querySelector('.more-menu').setAttribute("style","display:block !important;");
 }
 function ShowHideMenuMobile(){
   document.querySelector('.more-menu').setAttribute("style","display:none !important;");
