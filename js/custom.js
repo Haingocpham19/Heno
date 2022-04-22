@@ -35,7 +35,9 @@ document.getElementById("btn-more-ne").addEventListener("click", function(e) {
 })
 function ShowMoreMenuMobile(){
   document.querySelector('.more-menu').setAttribute("style","display:block !important;");
+  document.querySelector('.overlay_menu').style.display="block";
 }
 function ShowHideMenuMobile(){
   document.querySelector('.more-menu').setAttribute("style","display:none !important;");
+  document.querySelector('main').setAttribute("style","opacity:1");
 }
