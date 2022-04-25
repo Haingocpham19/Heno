@@ -1,3 +1,31 @@
+@font-face {
+    font-family: Nunito;
+    src: url(/fonts/Nunito-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Nunito;
+    src: url(/fonts/Nunito-Regular.woff2);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Nunito;
+    src: url(/fonts/Nunito-Bold.woff2);
+    font-weight: 700;
+}
+@font-face{
+    font-family: Nunito;
+    src:url(/fonts/Nunito-SemiBold.woff2);
+    font-weight: 600;
+}
+@font-face{
+    font-family: Nunito;
+    src:url(/fonts/Nunito-ExtraBold.woff2) format('woff2');
+    font-weight: 800;
+}
+
+$primary-color: #E12A41;
+
 dl,
 ol,
 ul {
@@ -66,7 +94,7 @@ header {
                     list-style-type: none;
 
                     a {
-                        font-weight: 600;
+                        font-weight: 700;
                         font-size: 16px;
                         color: #333333;
                     }
@@ -89,7 +117,7 @@ header {
                 width: 102px;
                 height: 40px;
                 font-size: 14px;
-                font-weight: 600;
+                font-weight: 700;
                 line-height: 18px;
                 color: #333333;
                 border: 1.5px solid #333333;
@@ -248,7 +276,7 @@ main{
         }
         li.active{
             a{
-                font-weight: 600;
+                font-weight: 800;
             }
         }
     }
@@ -368,6 +396,7 @@ main{
                         align-items: center;
 
                         p {
+                            font-weight: 400;
                             font-style: normal;
                             font-size: 16px;
                             color: #828282;
@@ -422,8 +451,7 @@ main{
                                     align-items: center;
 
                                     h6 {
-                                        font-family: "Inter", sans-serif;
-                                        font-weight: 500;
+                                        font-weight: 400;
                                         font-size: 14px;
                                         color: #828282;
                                         margin: 0 10px;
@@ -967,17 +995,18 @@ main{
 
 //sử dụng cho trang liên hệ
 .contact{
+    padding-top:110px;
     background-image: url(../images/background-contact.png);
     background-position: 160px 120px;
     background-repeat: no-repeat;
-    min-height: 700px;
+    min-height: 600;
     background-color: #F8F8F8;
     .inner{
         padding:40px 0;
         .info-contact{
             padding-right: 20px;
             h2{
-                font-weight: 700;
+                font-weight: 800;
                 font-size: 24px;
                 color:#E12A41;
                 margin-bottom:40px;
@@ -1032,15 +1061,78 @@ main{
             }
         }
     }
-    .map{
-        width: 100%;
-        .inner{
-            padding: 20px 0;
-            h3{
-                font-weight: 600;
-            }
+   
+}
+.map{
+    width: 100%;
+    .inner{
+        padding: 20px 0;
+        h3{
+            font-weight: 800;
         }
     }
+}
+.banner-introduction{
+    width: 100%;
+    padding-top: 110px;
+    height:452px;
+    background-color: $primary-color;
+    .inner{
+        height: 100%;
+        img{
+            margin:0 auto;
+            display:block;
+            object-fit: contain;
+            max-height: 100%;
+        }
+    }
+}
+.general-information{
+    padding:40px 0;
+    background-color: #ffffff;
+    font-size:18px;
+    line-height: 27px;
+    font-weight: 400;
+    h2{
+        font-size: 36px;
+        font-weight: 800;
+        color:$primary-color;
+        text-transform: uppercase !important;
+    }
+    hr{
+        width: 50px;
+        border:2px solid $primary-color;
+        border-radius: 8px;
+        opacity: 1 !important;
+    }
+    .g-info-l{
+        padding-right: 18px;
+    }
+
+}
+.map-location{
+    max-height: 930px;
+    .location{
+        position: relative;
+        width: fit-content !important;
+        height:fit-content !important;
+        // position: relative;
+        // height: 930px;
+        // background-image: url(/images/map-frame.png);
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: contain;
+        .map-frame{
+            width: 100%;
+        }
+        .location-1{
+            position:absolute;
+            top:10px;
+            left:10px;
+        }
+    }
+    
+    
 }
 footer{
     position: relative;
@@ -1163,7 +1255,9 @@ footer{
     footer{
         padding:0 16px;
     }
-   
+    .general-information{
+        padding:20px 16px;
+    }
 }
 @media screen and (max-width: 991px) {
    .header-section{
@@ -1193,10 +1287,30 @@ footer{
     .introduction{
         display:none !important;
     }
+    .map{
+        h3{
+            padding-left: 16px;
+        }
+    }
+    
+    .banner-introduction{
+        height: 300px;
+    }
+   
 }
 
 @media screen and (max-width: 767.98px){
-   
+    .general-information{
+        .inner{
+            display:block !important;
+        }
+        .g-info-l{
+            margin:20px 0;
+        }
+        .g-info-r{
+            margin-bottom: 20px;
+        }
+    }
     .service-care{
         margin-top:20px !important;
     }
@@ -1264,6 +1378,9 @@ footer{
    
 }
 @media screen and (max-width: 576px) {
+    .banner-introduction{
+        height: 250px;
+    }
     .footer-text-content{
         .name-author {
             font-size:10px !important;
@@ -1288,6 +1405,9 @@ footer{
     }
 }
 @media screen and (max-width:340px){
+    .banner-introduction{
+        height: 200px;
+    }
     .text-content{
         .h-cate{
             a{
