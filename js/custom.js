@@ -40,4 +40,10 @@ function ShowMoreMenuMobile(){
 function ShowHideMenuMobile(){
   document.querySelector('.more-menu').setAttribute("style","display:none !important;");
   document.querySelector('main').setAttribute("style","opacity:1");
+  document.querySelector('.overlay_menu').style.display="none";
 }
+//Hide OverLay
+document.querySelector(".overlay_menu").addEventListener("click", function(e) {
+  document.querySelector('.more-menu').setAttribute("style","display:none !important;");
+  document.querySelector('.overlay_menu').style.display="none";
+})

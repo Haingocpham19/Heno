@@ -115,6 +115,7 @@ header {
                 color: #fff;
               }
               .nav__mobile {
+                z-index:100;
                 opacity: 0;
                 transform: translateX(100%);
                 transition: transform linear 0.3s, opacity linear 0.5s;
@@ -192,7 +193,6 @@ header {
     }
 }
 main{
-    padding-top: 110px;
     padding-left:16px;
     padding-right: 16px;
 }
@@ -218,92 +218,110 @@ main{
         font-weight: 600;
     }
 }
-
-.main-section {
-
-    .header-section {
-        border-bottom: 1px solid #E0E0E0;
-        position: relative;
-        margin-bottom: 20px;
-        ul {
-            padding: 0;
-            width: 100%;
-            li {
-                position: relative;
-                font-weight: 600;
-                text-transform: uppercase;
-                padding: 0;
-                list-style-type: none;
-                margin-right: 20px;
-                padding-bottom: 10px;
-                .border-active{
-                    font-weight: 600;
-                    position:absolute;
-                    border:2px solid #E12A41;
-                    width: 100%;
-                    bottom: -2px;
-                    font-weight: 600;
-                }
-            }
-            li.active{
-                a{
-                    font-weight: 600;
-                }
-            }
-            .btn-showmore:checked ~ .menu__overlay {
-                display: block;
-            }
-            .menu__overlay {
-                z-index:9999;
-                display: none;
-                top: 0;
-                right: 0;
-                left: 0;
-                position:fixed;
-                bottom: 0;
-                background-color: rgba(0, 0, 0, 0.3);
-            }
-        }
-        .menu-tab{
-            display:block;
-        }
-        .menu-tab-mobile{
+.header-section {
+    padding-top:110px;
+    h1{
+        text-transform: uppercase;
+    }
+    border-bottom: 1px solid #E0E0E0;
+    position: relative;
+    margin-bottom: 20px;
+    ul {
+        padding: 0;
+        width: 100%;
+        li {
             position: relative;
-            display:none;
-            .current-menu{
-                li{
-                    margin-right:20px;
-                }
-            }
-            .more-menu{
-                top:32px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0;
+            list-style-type: none;
+            margin-right: 20px;
+            padding-bottom: 10px;
+            .border-active{
+                font-weight: 600;
                 position:absolute;
+                border:2px solid #E12A41;
                 width: 100%;
-                background-color: #F8F8F8;
-                display:flex;
-                z-index:9999;
-                li{
-                    padding:20px 0;
-                    border-bottom:1px solid #E0E0E0;
-                }
+                bottom: -2px;
+                font-weight: 600;
             }
-            .btn-more{
-                cursor: pointer;
-                margin-right: 10px;
+        }
+        li.active{
+            a{
+                font-weight: 600;
             }
-           
         }
     }
-    .overlay_menu{
-        display:none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 9998;
+    .menu-tab{
+        display:block;
     }
+   
+}
+.header-section-mobile{
+    display:none;
+    padding-top:90px;
+    z-index:98;
+    background-color:#F8F8F8;
+    h1{
+        padding-left:16px;
+        text-transform: uppercase;
+    }
+    position: relative;
+    margin-bottom: 20px;
+    .menu-item {
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0;
+        list-style-type: none;
+        padding-bottom: 10px;
+        .border-active{
+            font-weight: 600;
+            position:absolute;
+            border:2px solid #E12A41;
+            width: 100%;
+            bottom: -2px;
+            font-weight: 600;
+        }
+    }
+    .menu-item:first-child{
+        margin-right:20px;
+    }
+    .active{
+        font-weight: 800;     
+    }    
+    .menu-tab-mobile{
+        z-index:99;
+        position: relative;
+        display:none;
+        .current-menu{
+            margin:0 16px;
+            background-color: #F8F8F8;
+            border-bottom:1px solid #E0E0E0;
+            li{
+                margin-right:20px;
+            }
+        }
+        .more-menu{
+            padding:0 16px;
+            top:32px;
+            position:absolute;
+            width: 100%;
+            background-color: #F8F8F8;
+            display:flex;
+            .menu-item{
+                padding:20px 0;
+                border-bottom:1px solid #E0E0E0;
+            }
+        }
+        .btn-more{
+            cursor: pointer;
+            margin-right: 10px;
+        }
+       
+    }
+}
+.main-section {
     .introduction {
         .article-content {
             min-height: 520px;  
@@ -704,6 +722,16 @@ main{
         font-size: 14px;
     }
 }
+.overlay_menu{
+    display:none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 96;
+}
 //component dung lai
 .service-care{
     margin:0 0 20px 0; 
@@ -936,6 +964,7 @@ main{
         }
     }
 }
+
 //sử dụng cho trang liên hệ
 .contact{
     background-image: url(../images/background-contact.png);
@@ -1137,7 +1166,16 @@ footer{
    
 }
 @media screen and (max-width: 991px) {
-   
+   .header-section{
+       display:none !important;
+   }
+   .header-section-mobile{
+       display:block;
+   }
+    .menu-tab-mobile{
+        display:block !important; 
+    
+    }
     header {
         .h-r {
             display: none;
@@ -1192,13 +1230,7 @@ footer{
         padding: 0 16px;
     }
   
-    .menu-tab{
-        display:none !important;
-    }
-    .menu-tab-mobile{
-        display:block !important; 
-       
-    }
+   
     .main-section .header-section .more-menu li {
         margin-right: 0 !important;
     }
